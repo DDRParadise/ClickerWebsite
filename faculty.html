@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Faculty</title>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<link href="css/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css"/>
+  		<script src="js/jquery-1.7.1.min.js"></script>
+	 	<script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#accordion").accordion({ header: "h3", collapsible: true, active: false });
+  });
+  </script>
+	</head>
+	<body>
+        <img style="float: left;" width="100%" src="images/ISUtoolbar.png">
+        <div id="header">
+            <div id="headerimg">
+                <img src="images/wordmark.jpg">
+            </div> <!-- end of headerimg div -->
+            <div id="headertxt">
+                Clickers
+            </div> <!-- end of headertxt div -->
+        </div><!-- end of header div -->
+		<div id="container">
+			Faculty Page
+			<p>
+				<a href="index.html">Home</a>
+			</p>
+			<div id="button5">
+				<a href="../ClickerWebsite/register.html" class="button5">Clickers in the Classroom</a>
+			</div> <!-- end of button3 div -->
+			<div id="button6">
+				<a href="../ClickerWebsite/useclicker.html" class="button6">List Serv Link</a>
+			</div> <!-- end of button4 div -->
+			<p class="containertext">
+				FAQs
+			</p>
+			<div id="accordion">
+				<h3><a href="#">What is a clicker?</a></h3>
+				<div>
+					<p>
+				    <ul>
+			        <li>Answer to question 1</li>
+			        </ul>
+					</p>
+				</div>
+				<h3><a href="#">Where can I buy a clicker?</a></h3>
+				<div>
+					<p>
+			        <ul>
+			        <li>Answer to Question 2</li>
+			        </ul>
+					</p>
+				</div>
+				<h3><a href="#">How do I change the channel on my clicker?</a></h3>
+				<div>
+					<p>
+			        <ul>
+			        <li>Answer to Question 3</li>
+			        </ul>
+					</p>
+				</div>
+				<h3><a href="#">Why would I need to use a clicker?</a></h3>
+				<div>
+					<p>
+			        <ul>
+			        <li>Answer to Question 4</li>
+			        </ul>
+					</p>
+				</div>
+			</div> <!-- end of accordion div -->
+		</div> <!-- end of container div -->
+        <div id="footer_container">
+	        <div id="footer">
+	            <div id="address">
+	                Mail: Campus Box 6380 Normal, IL 61790-6380 <li> Phone: (309) 438-7412</li><li>Fax: (309) 438-3623</li>
+	            </div> <!-- end of address div -->
+	            <div id="contact">
+	                For tech support, contact Sarah
+	            </div> <!-- end of contact div -->
+	        </div> <!-- end of footer div -->
+            <div id="reggieimg">
+                <img src="images/footerReggieGrey.jpg" />
+            </div> <!-- end of reggieimg div -->
+	    </div>
+	</body>
+</html>

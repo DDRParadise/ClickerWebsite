@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Clicker Website</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+		<link href="css/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css"/>
+	  	<script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+        <script>
+            $(function() {
+            	$(".button1").click(function() {
+            		$.ajax({url:'../ClickerWebsite/students.html', cache: false, timeout:(30 * 1000), 
+	            		success: function(data) {
+	            			$("#container").html(data);
+	            			$("#accordion").accordion({ header: "h3", collapsible: true, active: false });
+            			},
+            			error: function(data) {
+            				console.log(JSON.stringify(data));
+            			}
+            		})
+            	});
+            });
+
+        </script>
+    </head>
+    <body>
+        <img style="float: left;" width="100%" src="images/ISUtoolbar.png">
+        <div id="header">
+            <div id="headerimg">
+                <img src="images/wordmark.jpg">
+            </div> <!-- end of headerimg div -->
+            <div id="headertxt">
+                Clickers
+            </div> <!-- end of headertxt div -->
+        </div><!-- end of header div -->
+        <div id="container">
+            <div id="button1">
+                <a href="../ClickerWebsite/students.html" class="button1">Students</a>
+            </div> <!-- end of button1 div -->
+        
+            <div id="button2">
+                <a href="../ClickerWebsite/faculty.html" class="button2">Faculty</a>
+            </div> <!-- end of button2 div -->
+            <p class="containertext">
+                Welcome to Illinois State University's Clicker Website
+            </p>
+        </div> <!-- end of container div -->
+        <div id="footer_container">
+	        <div id="footer">
+	            <div id="address">
+	                Mail: Campus Box 6380 Normal, IL 61790-6380 <li> Phone: (309) 438-7412</li><li>Fax: (309) 438-3623</li>
+	            </div> <!-- end of address div -->
+	            <div id="contact">
+	                For tech support, contact Sarah
+	            </div> <!-- end of contact div -->
+	        </div> <!-- end of footer div -->
+            <div id="reggieimg">
+                <img src="images/footerReggieGrey.jpg" />
+            </div> <!-- end of reggieimg div -->
+	    </div>
+    </body>
+</html>
+
